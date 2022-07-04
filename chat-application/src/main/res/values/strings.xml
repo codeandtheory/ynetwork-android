@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Chat Application</string>
+    <string name="title_activity_chat">ChatActivity</string>
+
+    <string name="email_field_label">Email</string>
+    <string name="password_field_label">Password</string>
+    <string name="login_button_label">Login</string>
+    <string name="login_with_form_encoding_button_label">Login With FormEncoding</string>
+    <string name="input_message">Message</string>
+    <string name="send">Send</string>
+
+    <string name="choose_communication_mode">Please choose communication mode</string>
+    <string name="choose_socket">Socket</string>
+    <string name="choose_rest_api_foreground">Rest API (Foreground file upload)</string>
+    <string name="choose_rest_api_background">Rest API (Background file upload)</string>
+
+    <string name="file_upload_error">Upload failed</string>
+    <string name="file_upload_success">Upload Completed</string>
+    <string name="file_upload_loading">Uploading (%1$s / %2$s) %3$s%%</string>
+    <string name="file_upload_processing">Processing file</string>
+</resources>
