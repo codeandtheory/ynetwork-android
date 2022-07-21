@@ -1,11 +1,11 @@
 package com.yml.chat.data
 
 import com.accelerator.network.android.asLiveData
-import com.accelerator.network.core.NetworkManager
-import com.accelerator.network.core.request.BasicRequestBody
-import com.accelerator.network.core.request.DataRequest
-import com.accelerator.network.core.request.FormRequestBody
-import com.accelerator.network.core.request.encodeUrlData
+import com.yml.network.core.NetworkManager
+import com.yml.network.core.request.BasicRequestBody
+import com.yml.network.core.request.DataRequest
+import com.yml.network.core.request.FormRequestBody
+import com.yml.network.core.request.encodeUrlData
 import java.nio.charset.StandardCharsets
 import javax.inject.Inject
 

@@ -1,16 +1,17 @@
 package com.accelerator.network.core.engine.network.demo
 
-import com.accelerator.network.core.Resource
-import com.accelerator.network.core.engine.cache.CACHE_ERROR_NOT_FOUND
-import com.accelerator.network.core.request.DataRequest
-import com.accelerator.network.core.request.Method
-import com.accelerator.network.core.request.RequestPath
-import com.accelerator.network.core.response.DataResponse
-import com.accelerator.network.core.response.DataSource
-import com.accelerator.network.core.response.HttpStatusCode
-import com.accelerator.network.core.response.StatusCodeException
+import com.yml.network.core.Resource
+import com.yml.network.core.engine.cache.CACHE_ERROR_NOT_FOUND
+import com.yml.network.core.request.DataRequest
+import com.yml.network.core.request.Method
+import com.yml.network.core.request.RequestPath
+import com.yml.network.core.response.DataResponse
+import com.yml.network.core.response.DataSource
+import com.yml.network.core.response.HttpStatusCode
+import com.yml.network.core.response.StatusCodeException
 import com.accelerator.network.core.verifyStatusCodeErrorResource
 import com.accelerator.network.core.verifySuccessResource
+import com.yml.network.core.engine.network.demo.DemoNetworkEngine
 import kotlinx.coroutines.flow.toList
 import kotlinx.coroutines.runBlocking
 import org.hamcrest.MatcherAssert.assertThat

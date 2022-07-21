@@ -1,6 +1,6 @@
 package com.accelerator.network.android.engine.cache.disklrucache
 
-import com.accelerator.network.core.Headers
+import com.yml.network.core.Headers
 import java.io.InputStream
 
 internal const val HEADER_SEPARATOR = ": "

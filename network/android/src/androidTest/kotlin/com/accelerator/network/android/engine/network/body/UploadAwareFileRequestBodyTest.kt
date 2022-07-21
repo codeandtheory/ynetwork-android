@@ -1,9 +1,9 @@
 package com.accelerator.network.android.engine.network.body
 
-import com.accelerator.network.core.MimeType
-import com.accelerator.network.core.Resource
-import com.accelerator.network.core.request.FileTransferInfo
-import com.accelerator.network.core.request.FileTransferProgressCallback
+import com.yml.network.core.MimeType
+import com.yml.network.core.Resource
+import com.yml.network.core.request.FileTransferInfo
+import com.yml.network.core.request.FileTransferProgressCallback
 import io.mockk.every
 import io.mockk.justRun
 import io.mockk.mockk

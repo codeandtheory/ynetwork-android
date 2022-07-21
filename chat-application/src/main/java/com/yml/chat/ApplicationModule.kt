@@ -4,11 +4,11 @@ import android.content.Context
 import android.util.Log
 import com.accelerator.network.android.engine.cache.AndroidCacheEngine
 import com.accelerator.network.android.engine.network.AndroidNetworkEngine
-import com.accelerator.network.core.NetworkManager
-import com.accelerator.network.core.NetworkManagerBuilder
-import com.accelerator.network.core.engine.cache.CacheEngine
-import com.accelerator.network.core.engine.network.NetworkEngine
-import com.accelerator.network.core.parser.BasicDataParserFactory
+import com.yml.network.core.NetworkManager
+import com.yml.network.core.NetworkManagerBuilder
+import com.yml.network.core.engine.cache.CacheEngine
+import com.yml.network.core.engine.network.NetworkEngine
+import com.yml.network.core.parser.BasicDataParserFactory
 import com.yml.chat.data.parser.JsonDataParser
 import com.yml.chat.logger.LoggerInterceptor
 import dagger.Module

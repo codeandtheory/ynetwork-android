@@ -1,11 +1,11 @@
 package com.yml.chat.logger
 
 import android.util.Log
-import com.accelerator.network.core.Resource
-import com.accelerator.network.core.interceptors.Interceptor
-import com.accelerator.network.core.interceptors.RedirectionState
-import com.accelerator.network.core.request.DataRequest
-import com.accelerator.network.core.response.DataResponse
+import com.yml.network.core.Resource
+import com.yml.network.core.interceptors.Interceptor
+import com.yml.network.core.interceptors.RedirectionState
+import com.yml.network.core.request.DataRequest
+import com.yml.network.core.response.DataResponse
 
 private val TAG = LoggerInterceptor::class.simpleName
 

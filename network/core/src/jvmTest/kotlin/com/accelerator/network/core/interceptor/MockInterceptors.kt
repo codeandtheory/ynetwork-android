@@ -1,7 +1,7 @@
 package com.accelerator.network.core.interceptor
 
-import com.accelerator.network.core.interceptors.Interceptor
-import com.accelerator.network.core.request.DataRequest
+import com.yml.network.core.interceptors.Interceptor
+import com.yml.network.core.request.DataRequest
 
 private const val RAW_HEADER_KEY = "test_header"
 private const val RAW_HEADER_VALUE = "test_header_value"

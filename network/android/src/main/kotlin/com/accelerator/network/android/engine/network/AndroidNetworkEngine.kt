@@ -2,26 +2,26 @@ package com.accelerator.network.android.engine.network
 
 import androidx.annotation.VisibleForTesting
 import com.accelerator.network.android.engine.network.body.UploadAwareFileRequestBody
-import com.accelerator.network.core.Headers
-import com.accelerator.network.core.Resource
-import com.accelerator.network.core.constants.THREAD_COUNT_NOT_DEFINED
-import com.accelerator.network.core.constants.TIMEOUT_NOT_DEFINED
-import com.accelerator.network.core.engine.network.NetworkEngine
-import com.accelerator.network.core.engine.network.config.NetworkEngineConfiguration
-import com.accelerator.network.core.proxy.ProxyType
-import com.accelerator.network.core.request.BasicRequestBody
-import com.accelerator.network.core.request.DataRequest
-import com.accelerator.network.core.request.FileRequestBody
-import com.accelerator.network.core.request.FileTransferProgressCallback
-import com.accelerator.network.core.request.FormRequestBody
-import com.accelerator.network.core.request.Method
-import com.accelerator.network.core.request.MultiPartRequestBody
-import com.accelerator.network.core.response.DataResponse
-import com.accelerator.network.core.response.DataSource
-import com.accelerator.network.core.response.HttpStatusCode
-import com.accelerator.network.core.response.HttpStatusCodeType
-import com.accelerator.network.core.response.NoDataException
-import com.accelerator.network.core.response.StatusCodeException
+import com.yml.network.core.Headers
+import com.yml.network.core.Resource
+import com.yml.network.core.constants.THREAD_COUNT_NOT_DEFINED
+import com.yml.network.core.constants.TIMEOUT_NOT_DEFINED
+import com.yml.network.core.engine.network.NetworkEngine
+import com.yml.network.core.engine.network.config.NetworkEngineConfiguration
+import com.yml.network.core.proxy.ProxyType
+import com.yml.network.core.request.BasicRequestBody
+import com.yml.network.core.request.DataRequest
+import com.yml.network.core.request.FileRequestBody
+import com.yml.network.core.request.FileTransferProgressCallback
+import com.yml.network.core.request.FormRequestBody
+import com.yml.network.core.request.Method
+import com.yml.network.core.request.MultiPartRequestBody
+import com.yml.network.core.response.DataResponse
+import com.yml.network.core.response.DataSource
+import com.yml.network.core.response.HttpStatusCode
+import com.yml.network.core.response.HttpStatusCodeType
+import com.yml.network.core.response.NoDataException
+import com.yml.network.core.response.StatusCodeException
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import okhttp3.Call
@@ -37,7 +37,7 @@ import okhttp3.RequestBody.Companion.toRequestBody
 import java.net.InetSocketAddress
 import java.net.Proxy
 import java.util.concurrent.TimeUnit
-import com.accelerator.network.core.request.RequestBody as DataRequestBody
+import com.yml.network.core.request.RequestBody as DataRequestBody
 
 private fun setupOkHttpClientBuilderTimeout(builder: OkHttpClient.Builder, timeout: Long) =
     builder.apply {

@@ -1,6 +1,7 @@
 package com.accelerator.network.core.parser
 
-import com.accelerator.network.core.MimeType
+import com.yml.network.core.MimeType
+import com.yml.network.core.parser.DataParser
 import java.io.ByteArrayInputStream
 import java.io.ByteArrayOutputStream
 import java.io.ObjectInputStream

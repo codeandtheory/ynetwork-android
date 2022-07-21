@@ -1,9 +1,10 @@
 package com.accelerator.network.core
 
-import com.accelerator.network.core.response.DataResponse
-import com.accelerator.network.core.response.DataSource
-import com.accelerator.network.core.response.HttpStatusCode
-import com.accelerator.network.core.response.StatusCodeException
+import com.yml.network.core.Resource
+import com.yml.network.core.response.DataResponse
+import com.yml.network.core.response.DataSource
+import com.yml.network.core.response.HttpStatusCode
+import com.yml.network.core.response.StatusCodeException
 import kotlin.reflect.KClass
 import org.hamcrest.MatcherAssert.assertThat
 import org.hamcrest.Matchers.instanceOf

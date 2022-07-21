@@ -1,16 +1,16 @@
 package com.accelerator.network.android.engine.cache
 
 import com.accelerator.network.android.engine.cache.disklrucache.DiskLruCache
-import com.accelerator.network.core.Resource
-import com.accelerator.network.core.request.BasicRequestBody
-import com.accelerator.network.core.request.CachePolicy
-import com.accelerator.network.core.request.DataRequest
-import com.accelerator.network.core.request.Method
-import com.accelerator.network.core.request.RequestBody
-import com.accelerator.network.core.response.DataResponse
-import com.accelerator.network.core.response.DataSource
-import com.accelerator.network.core.response.HttpStatusCode
-import com.accelerator.network.core.response.StatusCodeException
+import com.yml.network.core.Resource
+import com.yml.network.core.request.BasicRequestBody
+import com.yml.network.core.request.CachePolicy
+import com.yml.network.core.request.DataRequest
+import com.yml.network.core.request.Method
+import com.yml.network.core.request.RequestBody
+import com.yml.network.core.response.DataResponse
+import com.yml.network.core.response.DataSource
+import com.yml.network.core.response.HttpStatusCode
+import com.yml.network.core.response.StatusCodeException
 import io.mockk.MockKAnnotations
 import io.mockk.every
 import io.mockk.mockk

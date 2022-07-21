@@ -42,9 +42,9 @@ import androidx.constraintlayout.compose.Dimension
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Observer
-import com.accelerator.network.core.MimeType
-import com.accelerator.network.core.Resource
-import com.accelerator.network.core.request.FileTransferInfo
+import com.yml.network.core.MimeType
+import com.yml.network.core.Resource
+import com.yml.network.core.request.FileTransferInfo
 import com.yml.chat.R
 import com.yml.chat.TAG_REST_CHAT_SCREEN_ADD_ATTACHMENT
 import com.yml.chat.TAG_REST_CHAT_SCREEN_MESSAGE_ATTACHMENT_ITEM

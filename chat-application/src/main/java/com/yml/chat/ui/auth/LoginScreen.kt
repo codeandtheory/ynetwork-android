@@ -33,7 +33,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.MediatorLiveData
 import androidx.navigation.NavController
-import com.accelerator.network.core.Resource
+import com.yml.network.core.Resource
 import com.yml.chat.R
 
 @Composable

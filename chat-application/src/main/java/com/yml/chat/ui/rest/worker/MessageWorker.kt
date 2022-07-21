@@ -5,7 +5,7 @@ import androidx.hilt.work.HiltWorker
 import androidx.work.CoroutineWorker
 import androidx.work.Data
 import androidx.work.WorkerParameters
-import com.accelerator.network.core.Resource
+import com.yml.network.core.Resource
 import com.yml.chat.UniqueIdGenerator
 import com.yml.chat.data.ChatRepository
 import com.yml.chat.data.parser.JsonDataParser

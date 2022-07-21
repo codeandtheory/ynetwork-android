@@ -1,5 +1,6 @@
 package com.accelerator.network.core.request
 
+import com.yml.network.core.request.RequestPath
 import org.hamcrest.MatcherAssert.assertThat
 import org.hamcrest.core.Is.`is`
 import org.junit.jupiter.api.Test

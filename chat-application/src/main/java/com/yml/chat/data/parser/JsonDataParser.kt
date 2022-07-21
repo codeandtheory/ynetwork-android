@@ -1,6 +1,6 @@
 package com.yml.chat.data.parser
 
-import com.accelerator.network.core.parser.DataParser
+import com.yml.network.core.parser.DataParser
 import com.google.gson.GsonBuilder
 import com.yml.chat.data.MessageContent
 import com.yml.chat.data.MessageContentConstants

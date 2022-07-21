@@ -2,10 +2,10 @@ package com.accelerator.network.android
 
 import com.accelerator.network.android.engine.network.AndroidNetworkEngine
 import com.accelerator.network.android.engine.network.AndroidTrustManager
-import com.accelerator.network.core.NetworkManagerBuilder
-import com.accelerator.network.core.parser.BasicDataParserFactory
-import com.accelerator.network.core.parser.DataParser
-import com.accelerator.network.core.parser.DataParserFactory
+import com.yml.network.core.NetworkManagerBuilder
+import com.yml.network.core.parser.BasicDataParserFactory
+import com.yml.network.core.parser.DataParser
+import com.yml.network.core.parser.DataParserFactory
 
 object AndroidNetworkManager {
 

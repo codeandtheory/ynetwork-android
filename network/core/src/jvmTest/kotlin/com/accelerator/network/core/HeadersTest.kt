@@ -1,6 +1,8 @@
 package com.accelerator.network.core
 
-import com.accelerator.network.core.constants.HeadersConstants
+import com.yml.network.core.Headers
+import com.yml.network.core.MimeType
+import com.yml.network.core.constants.HeadersConstants
 import org.hamcrest.MatcherAssert.assertThat
 import org.hamcrest.Matchers.hasSize
 import org.hamcrest.core.Is.`is`

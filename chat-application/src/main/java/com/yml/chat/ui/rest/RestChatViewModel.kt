@@ -6,12 +6,11 @@ import android.util.Log
 import androidx.compose.runtime.mutableStateListOf
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MediatorLiveData
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
 import androidx.work.OneTimeWorkRequestBuilder
 import androidx.work.WorkManager
-import com.accelerator.network.core.Resource
-import com.accelerator.network.core.request.FileTransferInfo
+import com.yml.network.core.Resource
+import com.yml.network.core.request.FileTransferInfo
 import com.yml.chat.FileTransferManager
 import com.yml.chat.UniqueIdGenerator
 import com.yml.chat.data.ChatRepository

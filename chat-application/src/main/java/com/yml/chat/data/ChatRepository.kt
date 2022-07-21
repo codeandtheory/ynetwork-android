@@ -1,13 +1,13 @@
 package com.yml.chat.data
 
-import com.accelerator.network.core.Headers
-import com.accelerator.network.core.MimeType
-import com.accelerator.network.core.NetworkManager
-import com.accelerator.network.core.Resource
-import com.accelerator.network.core.request.DataRequest
-import com.accelerator.network.core.request.FileRequestBody
-import com.accelerator.network.core.request.MultiPartRequestBody
-import com.accelerator.network.core.response.DataResponse
+import com.yml.network.core.Headers
+import com.yml.network.core.MimeType
+import com.yml.network.core.NetworkManager
+import com.yml.network.core.Resource
+import com.yml.network.core.request.DataRequest
+import com.yml.network.core.request.FileRequestBody
+import com.yml.network.core.request.MultiPartRequestBody
+import com.yml.network.core.response.DataResponse
 import kotlinx.coroutines.flow.Flow
 import java.util.Calendar
 import javax.inject.Inject

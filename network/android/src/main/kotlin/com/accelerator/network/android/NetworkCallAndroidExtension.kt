@@ -2,9 +2,9 @@ package com.accelerator.network.android
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.asLiveData
-import com.accelerator.network.core.NetworkCall
-import com.accelerator.network.core.Resource
-import com.accelerator.network.core.response.DataResponse
+import com.yml.network.core.NetworkCall
+import com.yml.network.core.Resource
+import com.yml.network.core.response.DataResponse
 import kotlinx.coroutines.Dispatchers
 import kotlin.coroutines.CoroutineContext
 

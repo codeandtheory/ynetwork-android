@@ -1,9 +1,9 @@
 package com.yml.chat
 
-import com.accelerator.network.core.engine.cache.CacheEngine
-import com.accelerator.network.core.engine.cache.demo.DemoCacheEngine
-import com.accelerator.network.core.engine.network.NetworkEngine
-import com.accelerator.network.core.engine.network.demo.DemoNetworkEngine
+import com.yml.network.core.engine.cache.CacheEngine
+import com.yml.network.core.engine.cache.demo.DemoCacheEngine
+import com.yml.network.core.engine.network.NetworkEngine
+import com.yml.network.core.engine.network.demo.DemoNetworkEngine
 import dagger.Binds
 import dagger.Module
 import dagger.Provides

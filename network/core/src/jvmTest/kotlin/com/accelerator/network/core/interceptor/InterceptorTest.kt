@@ -1,9 +1,9 @@
 package com.accelerator.network.core.interceptor
 
-import com.accelerator.network.core.Headers
+import com.yml.network.core.Headers
 import com.accelerator.network.core.User
-import com.accelerator.network.core.request.DataRequest
-import com.accelerator.network.core.request.RequestPath
+import com.yml.network.core.request.DataRequest
+import com.yml.network.core.request.RequestPath
 import org.hamcrest.CoreMatchers.`is`
 import org.hamcrest.MatcherAssert.assertThat
 import org.junit.jupiter.api.Test

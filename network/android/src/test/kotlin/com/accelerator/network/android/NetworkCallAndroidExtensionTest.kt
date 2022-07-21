@@ -1,11 +1,11 @@
 package com.accelerator.network.android
 
 import androidx.lifecycle.Observer
-import com.accelerator.network.core.NetworkCall
-import com.accelerator.network.core.Resource
-import com.accelerator.network.core.response.DataResponse
-import com.accelerator.network.core.response.DataSource
-import com.accelerator.network.core.response.HttpStatusCode
+import com.yml.network.core.NetworkCall
+import com.yml.network.core.Resource
+import com.yml.network.core.response.DataResponse
+import com.yml.network.core.response.DataSource
+import com.yml.network.core.response.HttpStatusCode
 import io.mockk.every
 import io.mockk.mockk
 import io.mockk.verify

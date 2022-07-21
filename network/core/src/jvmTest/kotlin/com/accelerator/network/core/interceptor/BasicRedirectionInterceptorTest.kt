@@ -1,13 +1,13 @@
 package com.accelerator.network.core.interceptor
 
-import com.accelerator.network.core.Headers
-import com.accelerator.network.core.constants.HeadersConstants
-import com.accelerator.network.core.interceptors.BasicRedirectionInterceptor
-import com.accelerator.network.core.interceptors.RedirectionState
-import com.accelerator.network.core.request.DataRequest
-import com.accelerator.network.core.response.DataResponse
-import com.accelerator.network.core.response.DataSource
-import com.accelerator.network.core.response.HttpStatusCode
+import com.yml.network.core.Headers
+import com.yml.network.core.constants.HeadersConstants
+import com.yml.network.core.interceptors.BasicRedirectionInterceptor
+import com.yml.network.core.interceptors.RedirectionState
+import com.yml.network.core.request.DataRequest
+import com.yml.network.core.response.DataResponse
+import com.yml.network.core.response.DataSource
+import com.yml.network.core.response.HttpStatusCode
 import org.hamcrest.MatcherAssert.assertThat
 import org.hamcrest.Matchers.instanceOf
 import org.hamcrest.core.Is.`is`

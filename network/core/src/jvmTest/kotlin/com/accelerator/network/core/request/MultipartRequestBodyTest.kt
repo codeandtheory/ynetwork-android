@@ -1,8 +1,11 @@
 package com.accelerator.network.core.request
 
-import com.accelerator.network.core.Headers
-import com.accelerator.network.core.MimeType
-import com.accelerator.network.core.constants.HeadersConstants
+import com.yml.network.core.Headers
+import com.yml.network.core.MimeType
+import com.yml.network.core.constants.HeadersConstants
+import com.yml.network.core.request.BasicRequestBody
+import com.yml.network.core.request.FileRequestBody
+import com.yml.network.core.request.MultiPartRequestBody
 import org.hamcrest.MatcherAssert.assertThat
 import org.hamcrest.Matchers.`is`
 import org.hamcrest.Matchers.hasSize

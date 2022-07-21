@@ -162,7 +162,7 @@ class RequestPathFullUrlRegexPatternTest {
     fun verifyValidUrls(url: String) {
         assertThat(
             "Valid URL : $url is marked as invalid URL.",
-            url.matches(fullURLRegexPattern),
+            url.matches(com.yml.network.core.request.fullURLRegexPattern),
             `is`(true)
         )
     }
@@ -172,7 +172,7 @@ class RequestPathFullUrlRegexPatternTest {
     fun verifyInvalidUrls(url: String) {
         assertThat(
             "Invalid URL : $url is marked as valid URL.",
-            url.matches(fullURLRegexPattern),
+            url.matches(com.yml.network.core.request.fullURLRegexPattern),
             `is`(false)
         )
     }
@@ -182,7 +182,7 @@ class RequestPathFullUrlRegexPatternTest {
     fun verifyValidQueryParams(queryParam: String) {
         assertThat(
             "Valid Query param : $queryParam is marked as invalid Query param.",
-            queryParam.matches(queryParamsRegexPattern),
+            queryParam.matches(com.yml.network.core.request.queryParamsRegexPattern),
             `is`(true)
         )
     }
@@ -192,7 +192,7 @@ class RequestPathFullUrlRegexPatternTest {
     fun verifyInvalidQueryParams(queryParam: String) {
         assertThat(
             "Invalid Query param : $queryParam is marked as valid Query param.",
-            queryParam.matches(queryParamsRegexPattern),
+            queryParam.matches(com.yml.network.core.request.queryParamsRegexPattern),
             `is`(false)
         )
     }

@@ -1,7 +1,8 @@
 package com.accelerator.network.core.parser
 
-import com.accelerator.network.core.MimeType
-import com.accelerator.network.core.request.RequestPath
+import com.yml.network.core.MimeType
+import com.yml.network.core.parser.BasicDataParserFactory
+import com.yml.network.core.request.RequestPath
 import org.hamcrest.CoreMatchers.instanceOf
 import org.hamcrest.MatcherAssert.assertThat
 import org.hamcrest.core.Is.`is`

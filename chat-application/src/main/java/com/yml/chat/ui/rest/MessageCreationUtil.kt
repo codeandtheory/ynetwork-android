@@ -4,9 +4,9 @@ import android.content.Context
 import android.net.Uri
 import android.os.Environment
 import android.webkit.MimeTypeMap
-import com.accelerator.network.core.MimeType
-import com.accelerator.network.core.Resource
-import com.accelerator.network.core.response.DataResponse
+import com.yml.network.core.MimeType
+import com.yml.network.core.Resource
+import com.yml.network.core.response.DataResponse
 import com.yml.chat.UniqueIdGenerator
 import com.yml.chat.data.AttachmentData
 import com.yml.chat.data.ChatRepository
