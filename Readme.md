@@ -1,3 +1,5 @@
+![Y—Network](https://mpospese.com/wp-content/uploads/2022/08/YNetwork-hero-compact.jpeg)
+
 # Accelerator
 
 ## Documentation
