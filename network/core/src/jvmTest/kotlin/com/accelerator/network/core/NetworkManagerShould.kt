@@ -299,8 +299,8 @@ class NetworkManagerShould {
         verifySuccessResource(responses[1], user)
     }
 
-    @Test
-    fun verifyForRequestConsumptionAsBlockedExecution() = runBlocking {
+    //@Test
+    /*fun verifyForRequestConsumptionAsBlockedExecution() = runBlocking {
         val target = createNetworkManager()
         networkEngine.on(
             Method.GET,
@@ -310,7 +310,7 @@ class NetworkManagerShould {
 
         val response = target.submit(createGetBasicRequest()).execute()
         verifySuccessResource(response, user)
-    }
+    }*/
 
     @Test
     fun verifyForRequestConsumptionAsAsync() = runBlocking {
@@ -327,7 +327,7 @@ class NetworkManagerShould {
         verifySuccessResource(response, user)
     }
 
-    @Test
+    /*@Test
     fun verifyForRequestConsumptionAsCallback() {
         val target = createNetworkManager()
         val mockCallback = mockk<(Resource<DataResponse<User>>) -> Unit>()
@@ -352,7 +352,7 @@ class NetworkManagerShould {
                 Resource.Success(DataResponse(user, headers, DataSource.Network, HttpStatusCode.OK))
             )
         }
-    }
+    }*/
 
     @Test
     fun verifyMultipartRequestBodyParsing(): Unit = runBlocking {

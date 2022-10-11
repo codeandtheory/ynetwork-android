@@ -1,8 +1,9 @@
-package com.accelerator.plugin.library.android
+package com.accelerator.plugin.library
 
 import com.accelerator.plugin.library.LibraryPlugin
 import com.accelerator.plugin.library.PluginConstants
 import com.android.build.gradle.LibraryExtension
+import io.codearte.gradle.nexus.NexusStagingExtension
 import org.gradle.api.Project
 import org.gradle.api.plugins.ExtensionAware
 import org.gradle.api.tasks.bundling.Jar
@@ -12,10 +13,11 @@ import org.gradle.testing.jacoco.plugins.JacocoPluginExtension
 import org.gradle.testing.jacoco.tasks.JacocoReport
 import org.jetbrains.kotlin.gradle.dsl.KotlinJvmOptions
 import java.io.File
+import java.net.URI
 import java.util.Locale
 
-private const val EXTENSION_ANDROID = "android"
-private val ALLOWED_CONFIGURATION_REGEX = listOf("implementation", "api").map { it.toRegex() }
+const val EXTENSION_ANDROID = "android"
+val ALLOWED_CONFIGURATION_REGEX = listOf("implementation", "api").map { it.toRegex() }
 
 /**
  * Plugin for setting up the Android Library project.
@@ -24,6 +26,7 @@ class AndroidLibraryPlugin : LibraryPlugin() {
     override fun apply(target: Project) {
         target.apply(plugin = "com.android.library")
         target.apply(plugin = "kotlin-android")
+        //target.rootProject.plugins.apply("io.codearte.nexus-staging")
         setupAndroidSettings(target)
         setupJacocoPlugin(target)
         setupArtifactoryPublishing(target)
