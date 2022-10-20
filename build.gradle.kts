@@ -36,7 +36,6 @@ buildscript {
         classpath("org.jfrog.buildinfo:build-info-extractor-gradle:4.24.20")
         classpath("org.jacoco:org.jacoco.core:0.8.7")
     }
-
 }
 
 tasks.register("clean", Delete::class) {

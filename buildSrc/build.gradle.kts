@@ -1,6 +1,5 @@
 import org.gradle.kotlin.dsl.*
 
-
 plugins {
     `java-gradle-plugin`
     `maven-publish`
