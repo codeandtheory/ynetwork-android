@@ -1,15 +1,23 @@
 package com.accelerator.plugin.library
 
+import com.android.build.gradle.LibraryExtension
 import org.gradle.api.Action
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.api.plugins.ExtensionAware
 import org.gradle.api.publish.PublishingExtension
 import org.gradle.api.publish.maven.MavenPublication
-import org.gradle.kotlin.dsl.apply
-import org.gradle.kotlin.dsl.get
-import org.gradle.kotlin.dsl.getPluginByName
+import org.gradle.kotlin.dsl.*
 import org.jfrog.gradle.plugin.artifactory.dsl.ArtifactoryPluginConvention
+import de.marcphilipp.gradle.nexus.NexusPublishExtension
+import org.gradle.plugins.signing.SigningExtension
+import java.net.URI
+import io.codearte.gradle.nexus.NexusStagingExtension
+import java.io.File
+import java.io.FileInputStream
+import java.util.*
+import kotlin.collections.HashMap
+
 
 /**
  * Base class for configuring common components of library modules.
@@ -42,7 +50,6 @@ abstract class LibraryPlugin : Plugin<Project> {
         target.apply(plugin = "maven-publish")
         setArtifactoryDetails(target)
         setupArtifactory(target, publicationName)
-
         setupConfiguration<PublishingExtension>(target, "publishing") {
             publications {
                 register(publicationName, MavenPublication::class.java) {
@@ -73,6 +80,7 @@ abstract class LibraryPlugin : Plugin<Project> {
                 }
             }
         }
+        setUpNexusArtifactory(target)
     }
 
     private fun setupArtifactory(target: Project, publicationName: String) {
@@ -99,6 +107,72 @@ abstract class LibraryPlugin : Plugin<Project> {
                     setProperty("username", project.findProperty("artifactory_user"))
                     setProperty("password", project.findProperty("artifactory_password"))
                     setProperty("maven", true)
+                }
+            }
+        }
+    }
+
+    fun setUpNexusArtifactory(target: Project) {
+        target.plugins.apply("maven-publish")
+        target.repositories {
+            mavenCentral()
+        }
+        // read properties
+        var sonaTypeProperties : HashMap<String, String>
+                = HashMap<String, String> ()
+        val secretPropsFile = target.rootProject.file("local.properties")
+        if (secretPropsFile.exists()) {
+            // Read local.properties file first if it exists
+            val  p = Properties()
+            val fis = FileInputStream(secretPropsFile)
+            p.load(fis)
+            p.onEach{ map -> sonaTypeProperties[map.key as String] = map.value as String }
+        }
+        // configure ossh_username and ossh_password for the same
+        target.plugins.apply("de.marcphilipp.nexus-publish")
+        target.extensions.configure<NexusPublishExtension>("nexusPublishing") {
+            repositories {
+                sonatype {
+                    username.set(
+                        sonaTypeProperties.get("OSSRH_USERNAME")
+                    )
+                    password.set(
+                        sonaTypeProperties.get("OSSRH_PASSWORD")
+                    )
+                    nexusUrl.set(URI("https://s01.oss.sonatype.org/service/local/"))
+                    snapshotRepositoryUrl.set(URI("https://s01.oss.sonatype.org/content/repositories/snapshots/"))
+                    stagingProfileId.set(sonaTypeProperties.get("SONATYPE_STAGING_PROFILE_ID"))
+                }
+            }
+        }
+        // publish sources
+        target.afterEvaluate {
+            when {
+                plugins.hasPlugin("com.android.library") -> plugins.apply(AndroidLibraryPlugin::class.java)
+            }
+        }
+
+        target.repositories{
+            maven {
+                url = URI("https://s01.oss.sonatype.org/service/local/").resolve("/content/repositories/public")
+                credentials {
+                    username = sonaTypeProperties.get("OSSRH_USERNAME")
+                    password = sonaTypeProperties.get("OSSRH_PASSWORD")
+                }
+            }
+        }
+
+        // sign publications
+        target.plugins.apply("signing")
+        target.afterEvaluate {
+            extensions.configure<PublishingExtension>() {
+                configure<SigningExtension>() {
+                    useInMemoryPgpKeys(
+                        sonaTypeProperties["signing.keyId"],
+                        sonaTypeProperties["signing.key"],
+                        sonaTypeProperties["signing.password"]
+                    )
+                    sign(publications)
                 }
             }
         }
