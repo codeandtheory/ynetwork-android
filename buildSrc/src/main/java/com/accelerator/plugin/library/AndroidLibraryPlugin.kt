@@ -26,7 +26,6 @@ class AndroidLibraryPlugin : LibraryPlugin() {
     override fun apply(target: Project) {
         target.apply(plugin = "com.android.library")
         target.apply(plugin = "kotlin-android")
-        //target.rootProject.plugins.apply("io.codearte.nexus-staging")
         setupAndroidSettings(target)
         setupJacocoPlugin(target)
         setupArtifactoryPublishing(target)

@@ -27,7 +27,7 @@ dependencies {
     implementation("de.marcphilipp.gradle:nexus-publish-plugin:0.4.0")
     implementation("io.codearte.nexus-staging:io.codearte.nexus-staging.gradle.plugin:0.22.0")
     implementation("com.android.tools.build:gradle:7.1.3")
-    //implementation("io.github.gradle-nexus.publish-plugin:1.1.0")
+
     /* Example Dependency */
     /* Depend on the kotlin plugin, since we want to access it in our plugin */
     implementation("org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.10")
