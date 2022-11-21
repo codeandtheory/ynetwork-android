@@ -1,6 +1,6 @@
 ![Y—Network](https://mpospese.com/wp-content/uploads/2022/08/YNetwork-hero-compact.jpeg)
 
-# Accelerator
+Looking for the iOS version of Y--Network? Check it out [here](https://github.com/yml-org/ynetwork-ios). 
 
 ## Documentation
 
