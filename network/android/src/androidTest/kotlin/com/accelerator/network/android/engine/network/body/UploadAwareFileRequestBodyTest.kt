@@ -103,7 +103,7 @@ class UploadAwareFileRequestBodyTest {
             buffer.isOpen,
             `is`(true)
         )   // Verify the buffer is not closed by RequestBody, as it should be closed by OkHttp only.
-
+        target.onRequestComplete(true)
         val fileInfo =
             FileTransferInfo(testFile.absolutePath, FILE_NAME, MimeType.TEXT_PLAIN, true, fileSize)
         verifyOrder {
