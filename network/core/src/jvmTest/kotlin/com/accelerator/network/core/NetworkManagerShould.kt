@@ -13,6 +13,8 @@ import com.yml.network.core.MimeType
 import com.yml.network.core.NetworkManager
 import com.yml.network.core.NetworkManagerBuilder
 import com.yml.network.core.Resource
+import com.yml.network.core.addObserver
+import com.yml.network.core.execute
 import com.yml.network.core.request.BasicRequestBody
 import com.yml.network.core.request.CachePolicy
 import com.yml.network.core.request.DataRequest
