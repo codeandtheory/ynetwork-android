@@ -1,7 +1,7 @@
-import com.accelerator.dependencies.library.android.AndroidLibraryDependencies
+import co.accelerator.dependencies.library.android.AndroidLibraryDependencies
 
 plugins {
-    id("com.accelerator.library.android")
+    id("co.accelerator.library.android")
 }
 
 dependencies {
