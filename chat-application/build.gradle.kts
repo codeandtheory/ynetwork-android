@@ -1,5 +1,5 @@
-import com.accelerator.dependencies.library.android.AndroidLibraryDependencies
-import com.accelerator.dependencies.sample.AndroidSampleAppDependencies
+import co.accelerator.dependencies.library.android.AndroidLibraryDependencies
+import co.accelerator.dependencies.sample.AndroidSampleAppDependencies
 
 plugins {
     id("com.android.application")
@@ -12,13 +12,13 @@ android {
     compileSdk = 31
 
     defaultConfig {
-        applicationId = "com.yml.chat"
+        applicationId = "co.yml.chat"
         minSdk = 21
         targetSdk = 31
         versionCode = 1
         versionName = "1.0"
 
-        testInstrumentationRunner = "com.yml.chat.TestRunner"
+        testInstrumentationRunner = "co.yml.chat.TestRunner"
         vectorDrawables {
             useSupportLibrary = true
         }
@@ -45,7 +45,7 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = com.accelerator.dependencies.sample.AndroidSampleAppDependenciesVersion.compose
+        kotlinCompilerExtensionVersion = co.accelerator.dependencies.sample.AndroidSampleAppDependenciesVersion.compose
     }
     packagingOptions {
         resources {

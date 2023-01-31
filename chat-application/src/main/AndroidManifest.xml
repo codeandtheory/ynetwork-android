@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.yml.chat" >
+    package="co.yml.chat" >
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
     <application
-        android:name="com.yml.chat.Application"
+        android:name="co.yml.chat.Application"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -15,7 +15,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Accelerator" >
         <activity
-            android:name="com.yml.chat.ChatActivity"
+            android:name="co.yml.chat.ChatActivity"
             android:exported="true"
             android:label="@string/title_activity_chat"
             android:theme="@style/Theme.Accelerator.NoActionBar" >
@@ -28,13 +28,13 @@
 
         <provider
             android:name="androidx.startup.InitializationProvider"
-            android:authorities="com.yml.chat.androidx-startup"
+            android:authorities="co.yml.chat.androidx-startup"
             tools:node="remove">
         </provider>
 
         <provider
             android:name="androidx.core.content.FileProvider"
-            android:authorities="com.yml.chat.provider"
+            android:authorities="co.yml.chat.provider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data

@@ -1,7 +1,7 @@
-import com.accelerator.dependencies.library.kmp.KmpDependencies
+import co.accelerator.dependencies.library.kmp.KmpDependencies
 
 plugins {
-    id("com.accelerator.library.kmp")
+    id("co.accelerator.library.kmp")
 }
 
 kotlin {
