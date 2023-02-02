@@ -78,7 +78,7 @@ dependencies {
     implementation(AndroidSampleAppDependencies.prod.Hilt)
     implementation(AndroidSampleAppDependencies.prod.HiltWorkManager)
     implementation(AndroidSampleAppDependencies.prod.WorkManagerCoroutine)
-    implementation(project(":network:android"))
+    implementation(AndroidSampleAppDependencies.prod.YNetwork)
 
     kapt(AndroidSampleAppDependencies.prod.HiltAnnotationCompiler)
     kapt(AndroidSampleAppDependencies.prod.HiltWorkManagerAnnotationCompiler)

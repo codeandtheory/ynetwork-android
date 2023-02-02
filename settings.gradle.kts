@@ -3,6 +3,9 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven {
+            url = uri("https://ymedia.jfrog.io/artifactory/ynetwork-gradle-release/")
+        }
     }
 }
 rootProject.name = "Accelerator"

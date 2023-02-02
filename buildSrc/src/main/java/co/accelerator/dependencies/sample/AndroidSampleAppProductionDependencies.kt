@@ -39,4 +39,6 @@ object AndroidSampleAppProductionDependencies {
     val Socket by lazy { "io.socket:socket.io-client:2.0.0" }
 
     val WorkManagerCoroutine by lazy { "androidx.work:work-runtime-ktx:${AndroidSampleAppDependenciesVersion.workManager}" }
+
+    val YNetwork by lazy { "com.accelerator.network:android:${AndroidSampleAppDependenciesVersion.yNetwork}" }
 }
