@@ -24,7 +24,7 @@ fun setArtifactoryDetails(project: Project) {
         "$ROOT_PACKAGE.logger",
         "$ROOT_PACKAGE.downloader" -> "1.0.0"
         "$ROOT_PACKAGE.network.android",
-        "$ROOT_PACKAGE.network" -> "2.0.0"
+        "$ROOT_PACKAGE.network" -> "1.0.0"
         else -> throw NotImplementedError("Accelerator ProjectArtifactoryException: Version for $modifiedGroupName group is not specified")
     }
 

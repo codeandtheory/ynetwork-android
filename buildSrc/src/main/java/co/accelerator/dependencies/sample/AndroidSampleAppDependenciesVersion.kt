@@ -7,4 +7,5 @@ object AndroidSampleAppDependenciesVersion {
         "2.39.1" // Due to build issue with KMP for Hilt 2.40.*, sticking with 2.39.* version
     const val hiltWorkManager = "1.0.0"
     const val workManager = "2.7.1"
+    const val yNetwork = "1.0.0"
 }

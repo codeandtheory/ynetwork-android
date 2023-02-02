@@ -80,7 +80,7 @@ abstract class LibraryPlugin : Plugin<Project> {
             setContextUrl(project.findProperty("artifactory_contextUrl"))
             publish {
                 repository {
-                    setProperty("repoKey", "accelerator-gradle-release-local")
+                    setProperty("repoKey", "ynetwork-gradle-release")
                     setProperty("username", project.findProperty("artifactory_user"))
                     setProperty("password", project.findProperty("artifactory_password"))
                     setProperty("maven", true)
@@ -95,7 +95,7 @@ abstract class LibraryPlugin : Plugin<Project> {
             }
             resolve {
                 repository {
-                    setProperty("repoKey", "accelerator-gradle-dev")
+                    setProperty("repoKey", "ynetwork-gradle-dev")
                     setProperty("username", project.findProperty("artifactory_user"))
                     setProperty("password", project.findProperty("artifactory_password"))
                     setProperty("maven", true)
